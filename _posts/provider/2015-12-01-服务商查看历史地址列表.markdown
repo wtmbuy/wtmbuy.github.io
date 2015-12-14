@@ -1,0 +1,45 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/searchAddressList.html`
+
+参数：
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "addressList": [
+        {
+            "address": "思明区厦禾路261号F层场所01单元",
+            "id": "46876546341354555555555555555555",
+            "longitude": "45.78",
+            "latitude": "45.12",
+            "city": "厦门市",
+            "county": "思明区",
+            "providerId": "12345678123456781234567812345658",
+            "provinces": "福建省"
+        },
+        {
+            "address": "湖里区金尚路375号203室",
+            "id": "56346546436566347843466843463464",
+            "longitude": "124.568",
+            "latitude": "14.25",
+            "city": "厦门市",
+            "county": "湖里区",
+            "providerId": "12345678123456781234567812345658",
+            "provinces": "福建省"
+        }
+    ],
+    "errorType": "none",
+    "remark": "success",
+    "success": true 
+    }
+
+{% endhighlight %}
+

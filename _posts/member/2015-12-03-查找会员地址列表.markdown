@@ -1,0 +1,32 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/searchAddressList.html`
+
+参数：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+     "addressList": [
+        {
+            "address": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)",
+            "id": "34235442552446552346234234642355",
+            "memberId": "15279437023133720150417092245616",
+            "city": "厦门市",
+            "county": "思明区",
+            "longitude": "118.116058",
+            "latitude": "24.475611",
+            "provinces": "福建省"
+        }
+    ],
+    "errorType": "none",
+    "remark": "success",
+    "success": true
+}
+
+{% endhighlight %}

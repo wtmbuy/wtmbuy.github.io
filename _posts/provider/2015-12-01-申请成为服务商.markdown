@@ -1,0 +1,24 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/applyProvider.html`
+
+参数：
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "申请成功",
+    "applySuccess": "1",//为 0 时，需要上传资料，同时增加返回字段 "sexIfSet": "1",0为未设置性别 1为已设置
+    "success": true
+}
+
+{% endhighlight %}
+

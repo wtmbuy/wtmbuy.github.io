@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>查看订单列表</title>
+  <meta name="description" content="请求地址：http://192.168.2.122/wtmportal/app/native/order/viewOrderList.html">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/order/2015/12/10/%E6%9F%A5%E7%9C%8B%E8%AE%A2%E5%8D%95%E5%88%97%E8%A1%A8.html">
+  <link rel="alternate" type="application/rss+xml" title="本地服务接口文档" href="/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">本地服务接口文档</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          <a class="page-link" href="/member">member</a>
+        
+          <a class="page-link" href="/order">order</a>
+        
+          <a class="page-link" href="/provider">provider</a>
+        
+          <a class="page-link" href="/remark">remark</a>
+        
+          <a class="page-link" href="/other">other</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">查看订单列表</h1>
+    <p class="post-meta"><time datetime="2015-12-10T00:00:00+08:00" itemprop="datePublished">Dec 10, 2015</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>请求地址：http://192.168.2.122/wtmportal/app/native<code class="highlighter-rouge">/order/viewOrderList.html</code></p>
+
+<p>参数：</p>
+
+<ul>
+  <li>memberType <code class="highlighter-rouge">服务商传5，会员传1</code></li>
+  <li>pageNo</li>
+  <li>status <code class="highlighter-rouge">（红色字体数字为前台传值，黑色字体数字为查询的相应的状态） 1 等待中 1，2；2 进行中 3；3 已完成 4；4 已取消 5 6 7;</code></li>
+</ul>
+
+<p>返回值：</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">  </span><span class="nt">"errorType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"none"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"totalCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"waitCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"remark"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"cancelCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"marchCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"totalPage"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"orderList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"89331515569350820151209170423895"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"content"</span><span class="p">:</span><span class="w"> </span><span class="s2">"快来修啊"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"releaseType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerLongitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"118.116047"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerLatitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.475622"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-12-09 17:04:22"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerTimeStamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1449651862717</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"useRedpacket"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="err">**</span><span class="nt">"ifMemberComment"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="err">**</span><span class="w">
+            </span><span class="err">**</span><span class="nt">"ifproviderComment"</span><span class="p">:</span><span class="w"> </span><span class="kc">false</span><span class="p">,</span><span class="err">**</span><span class="w">
+            </span><span class="nt">"viewPrice"</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"imgurl"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/demand/201512091704229216277.jpg&amp;&amp;&amp;"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"distance"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"useYue"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"useGold"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"batchId"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"status"</span><span class="p">:</span><span class="w"> </span><span class="s2">"4"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberAccount"</span><span class="p">:</span><span class="w"> </span><span class="s2">"righky"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"useCoupon"</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"imgList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+                </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/demand/201512091704229216277.jpg"</span><span class="w">
+            </span><span class="p">],</span><span class="w">
+            </span><span class="nt">"payStatus"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"payWay"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"小米手环坏了"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"15279437023133720150417092245616"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sex"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"78142375978651120151209165705491"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerName"</span><span class="p">:</span><span class="w"> </span><span class="s2">"黄先生"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberAddress"</span><span class="p">:</span><span class="w"> </span><span class="s2">"福建省 厦门市 思明区 湖滨南路 靠近博瀛小聚"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberLatitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.475456"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberLongitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"118.116043"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"interestedIn"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"serviceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createTimeStamp"</span><span class="p">:</span><span class="w"> </span><span class="mi">1449651862717</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"memberHeadImg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"providerHeadImg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmportal//upload/dh623/head/201511021637118094387.jpg"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"payWaterId"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015120917142789235820102"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"createTime"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2015-12-09 17:04:22"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"totalPrice"</span><span class="p">:</span><span class="w"> </span><span class="kc">null</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">],</span><span class="w">
+    </span><span class="nt">"completeCount"</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w">
+</span><span class="p">}</span></code></pre></figure>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+<!--
+  <div class="wrapper">
+
+    <h2 class="footer-heading">本地服务接口文档</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>本地服务接口文档</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+-->
+</footer>
+
+
+  </body>
+
+</html>

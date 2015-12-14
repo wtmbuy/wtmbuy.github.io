@@ -1,0 +1,30 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/viewMember.html`
+
+参数：
+
+- memberId
+
+返回值：
+
+{% highlight json %}
+
+{
+     "member": {
+        "memberId": "76956413673215020150321175118664",
+        "sex": "1",
+        "cellphone": "15960808557",
+        "headImageUrl": "http://192.168.2.122:8080/wtmportal//upload/dh623/head/201511021637118094387.jpg",
+        "memberAccount": "dh623",
+        "evaluate": 4.25,
+        "demandCount": 0
+    },
+    "errorType": "none",
+    "remark": "success",
+    "success": true
+}
+
+{% endhighlight %}

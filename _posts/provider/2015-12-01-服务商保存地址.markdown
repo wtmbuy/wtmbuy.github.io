@@ -1,0 +1,30 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/saveAddress.html`
+
+参数：
+
+- address  `地址`
+- longitude `经度`
+- latitude `纬度`
+- provinces `省`
+- city `市`
+- county `县区`
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "保存地址成功！",
+    "success": true
+}
+
+{% endhighlight %}
+

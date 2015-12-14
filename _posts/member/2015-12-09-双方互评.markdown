@@ -1,0 +1,25 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/comments.html`
+
+参数：
+
+- orderId `订单id`
+- evaluate `评价等级，可以为4.5 这样的`
+- content `评价内容`
+- commemtType `会员类型 会员评价服务商传 1 ；服务商评价会员传 2`
+
+返回值：
+
+{% highlight json %}
+
+{
+     
+    "errorType": "none",
+    "remark": "评论会员成功！",
+    "success": true
+}
+
+{% endhighlight %}

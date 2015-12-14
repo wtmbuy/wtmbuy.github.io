@@ -1,0 +1,32 @@
+---
+layout: post
+categories: remark
+---
+请求地址：http://192.168.2.122/wtmportal/
+
+参数：
+
+返回值：
+
+{% highlight json %}
+
+{
+    
+    登录增加isNative参数，判断是否是服务APP如果是服务商，则返回的isProvider 里 赋值 服务商Id，长度是32位，否，则返回的isProvider字段 为0
+
+    订单状态 status// 1 为会员发布需求;2 为会员下单，等待服务商确认状态;3 为服务商确认订单，发送信息给会员状态;4为会员点击服务完成状态，结束状态; 5为服务商取消的订单，也为结束状态之一; 6为会员取消的订单，也为结束状态之一; 7为会员取消需求;9为服务商确认会员单独在店内下的单
+
+    1 等待中 1，2 ，9
+    2 进行中 3   
+    3 已完成 4 
+    4 已取消 5 6 7
+    5待付款  
+    订单id与需求id(orderList与order里的id)   
+    服务id(servicesList与serviceProvider里的id,其他返回值里的serviceProviderId)
+    服务商id(provider里的id,其他返回值里的providerId)
+ 
+}
+
+{% endhighlight %}
+
+

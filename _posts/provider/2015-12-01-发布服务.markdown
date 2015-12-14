@@ -1,0 +1,41 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/upService.html`
+
+参数：
+
+- serviceType `服务类型（尚未定义，先传1`）
+- title
+- content
+- address `详细地址`
+- longitude `经度`
+- latitude `纬度`
+- provinces `省`
+- city `市`
+- county `县区`
+- viewPrice 
+- imgFileList `文件对象，可多个`
+- payWay `支付方式  1为立即支付 2为事后支付`
+- **validityBegin** `有限期开始，可为空`
+- **validityEnd** `有效期结束，可为空`
+- **limitMin** `限制最小人数，可为空`
+- **limitMax** `限制最大人数，可为空`
+
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "发布成功！",
+    "success": true
+}
+
+{% endhighlight %}
+

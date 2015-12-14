@@ -1,0 +1,22 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/sendCellphoneCode.html`
+
+参数：
+
+- cellphone
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "success",
+    "success": true
+
+}
+
+{% endhighlight %}

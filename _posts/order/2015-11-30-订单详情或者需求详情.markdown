@@ -1,0 +1,58 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/orderDetails.html`
+
+参数：
+
+- id `订单id`
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "userMember": {
+        "cellphone": "18959264392",
+        "headImageUrl": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511060458269966566.jpg",
+        "memberAccount": "righky",
+        "sex": "1",//1为男士 2为女士---
+        "memberId": "15279437023133720150417092245616"
+    },
+    "errorType": "none",
+    "remark": "success",
+    "provider": {
+        "id": "12345678123456781234567812345625",
+        "cellphone": "13459733222",
+        "createTimeStamp": null,
+        "providerName": "王龙辉",
+        "createTime": "",
+        "memberId": "24361316139713720150825111146239",
+        "headImg": "http://www.wtmbuy.com:80//upload/wuyuan/head/201508311005230501475.jpg"
+    },
+    "success": true,
+    "order": {
+        "id": "80108095403545020151110162947915",
+        "content": "祖传贴膜坏了",
+        "status": "1",
+        "createTimeStamp": 1447144187868,
+        "memberAddress": "灌口镇凤泉东里73号",
+        "memberLatitude": "45.26",
+        "memberLongitude": "13.15",
+        "providerId": "12345678123456781234567812345625",
+        "serviceType": "1",
+        "createTime": "2015-11-10 16:29:47",
+        "title": "需要帮忙",
+        "memberId": "15279437023133720150417092245616",
+        "releaseType": "2",
+        "providerAddress": "思明区厦禾路261号F层场所01单元",
+        "providerLongitude": "45.78",
+        "providerLatitude": "45.12",
+        "providerTime": "2015-11-10 16:30:10",
+        "providerTimeStamp": 1447144210221
+    }
+}
+
+{% endhighlight %}

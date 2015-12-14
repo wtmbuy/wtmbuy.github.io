@@ -1,0 +1,34 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/releaseDemand.html`
+
+参数：
+
+- releaseType `发布类型，1为简单模式 只有标题无详情2为复杂模式，有详情`
+- serviceType `服务类型（尚未定义，先传1）`
+- title `标题`
+- content`详情`
+- memberAddress
+- memberLongitude
+- memberLatitude
+- viewPrice
+- payWay `1为立即支付 2为事后支付`
+- imgFileList `文件对象，可多个`
+
+
+返回值：
+
+{% highlight json %}
+
+{
+   "id": "88339593117385520151123170934325",
+    "wtmPayWaterId": "2015112317095904290975418",
+    "payPrice": 108,
+    "errorType": "none",
+    "remark": "发布需求成功！",
+    "success": true 
+}
+
+{% endhighlight %}

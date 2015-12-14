@@ -1,0 +1,23 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/saveOrder.html`
+
+参数：
+
+- providerServicesId `服务id`
+- saveOrderType `1 为会员在服务商店铺下单;2 为服务商在需求列表中接单`
+
+
+返回值：
+
+{% highlight json %}
+
+{
+   "errorType": "none",
+    "remark": "订单创建成功，请等候服务商的确认！",
+    "success": true
+}
+
+{% endhighlight %}

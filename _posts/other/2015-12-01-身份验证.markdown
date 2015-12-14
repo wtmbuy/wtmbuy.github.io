@@ -1,0 +1,28 @@
+---
+layout: post
+categories: other
+---
+请求地址：http://192.168.2.122/wtmportal/`app/account/authenticationSave.html`
+
+参数：
+
+- applyName `真实姓名`
+- idCard `身份证号码`
+- idCardFore `身份证正面照`
+- idCardBack `身份证反面照`
+- halfProtraitIdCard `手持身份证照片`
+- nativeMemberId `（即为memberId）`
+
+返回值：
+
+{% highlight json %}
+
+{   
+    "errorType": "none",
+    "remark": "success",
+    "success": true 
+}
+
+{% endhighlight %}
+
+

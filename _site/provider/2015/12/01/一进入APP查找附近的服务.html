@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>一进入app查找附近的服务</title>
+  <meta name="description" content="请求地址：http://192.168.2.122/wtmportal/app/native/provider/searchNearService.html">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/provider/2015/12/01/%E4%B8%80%E8%BF%9B%E5%85%A5APP%E6%9F%A5%E6%89%BE%E9%99%84%E8%BF%91%E7%9A%84%E6%9C%8D%E5%8A%A1.html">
+  <link rel="alternate" type="application/rss+xml" title="本地服务接口文档" href="/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">本地服务接口文档</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          <a class="page-link" href="/member">member</a>
+        
+          <a class="page-link" href="/order">order</a>
+        
+          <a class="page-link" href="/provider">provider</a>
+        
+          <a class="page-link" href="/remark">remark</a>
+        
+          <a class="page-link" href="/other">other</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">一进入app查找附近的服务</h1>
+    <p class="post-meta"><time datetime="2015-12-01T00:00:00+08:00" itemprop="datePublished">Dec 1, 2015</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>请求地址：http://192.168.2.122/wtmportal/app/native<code class="highlighter-rouge">/provider/searchNearService.html</code></p>
+
+<p>参数：</p>
+
+<ul>
+  <li>provinces <code class="highlighter-rouge">省，可为空</code></li>
+  <li>city <code class="highlighter-rouge">市，可为空</code></li>
+  <li>county <code class="highlighter-rouge">县区，可为空</code></li>
+  <li>near <code class="highlighter-rouge">传1 则为搜寻附近5公里的服务</code></li>
+  <li>mlongitude <code class="highlighter-rouge">near传1时，必传</code></li>
+  <li>mlatitude <code class="highlighter-rouge">near传1时，必传</code></li>
+</ul>
+
+<p>返回对象：</p>
+
+<ul>
+  <li><a href="/com/wtm/nativeService/provider/vo/ProviderServicesVo.html">servicesList</a></li>
+</ul>
+
+<p>返回值：</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    </span><span class="nt">"errorType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"none"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"remark"</span><span class="p">:</span><span class="w"> </span><span class="s2">"success"</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"success"</span><span class="p">:</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span><span class="w">
+    </span><span class="nt">"servicesList"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"福建省 厦门市 思明区 湖滨南路 靠近夏商置业"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"50477324330200220151117200833068"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"接电话"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"viewPrice"</span><span class="p">:</span><span class="w"> </span><span class="mi">256</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"118.115967"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.475712"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"distance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"28.0 m"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"headimg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"57184059363448620151123183422530"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"赢"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"viewPrice"</span><span class="p">:</span><span class="w"> </span><span class="mi">22</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"118.116111"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.475665"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"distance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"31.0 m"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"headimg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"</span><span class="w">
+        </span><span class="p">},</span><span class="w">
+        </span><span class="p">{</span><span class="w">
+            </span><span class="nt">"address"</span><span class="p">:</span><span class="w"> </span><span class="s2">"福建省 厦门市 思明区 湖滨南路 靠近夏商置业"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"id"</span><span class="p">:</span><span class="w"> </span><span class="s2">"07650041119017220151117162607461"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"title"</span><span class="p">:</span><span class="w"> </span><span class="s2">"大呼小叫"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"viewPrice"</span><span class="p">:</span><span class="w"> </span><span class="mi">12</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"longitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"118.11602"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"latitude"</span><span class="p">:</span><span class="w"> </span><span class="s2">"24.475634"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"sex"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"distance"</span><span class="p">:</span><span class="w"> </span><span class="s2">"35.0 m"</span><span class="p">,</span><span class="w">
+            </span><span class="nt">"headimg"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"</span><span class="w">
+        </span><span class="p">}</span><span class="w">
+    </span><span class="p">]</span><span class="w">
+
+</span><span class="p">}</span></code></pre></figure>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+<!--
+  <div class="wrapper">
+
+    <h2 class="footer-heading">本地服务接口文档</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>本地服务接口文档</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+-->
+</footer>
+
+
+  </body>
+
+</html>

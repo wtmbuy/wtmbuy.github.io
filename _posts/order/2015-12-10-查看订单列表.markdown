@@ -1,0 +1,73 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/viewOrderList.html`
+
+参数：
+
+- memberType `服务商传5，会员传1`
+- pageNo
+- status `（红色字体数字为前台传值，黑色字体数字为查询的相应的状态） 1 等待中 1，2；2 进行中 3；3 已完成 4；4 已取消 5 6 7;`
+
+返回值：
+
+{% highlight json %}
+
+{  "errorType": "none",
+    "totalCount": 1,
+    "waitCount": 0,
+    "remark": "success",
+    "cancelCount": 0,
+    "marchCount": 0,
+    "success": true,
+    "totalPage": 1,
+    "orderList": [
+        {
+            "id": "89331515569350820151209170423895",
+            "content": "快来修啊",
+            "releaseType": "2",
+            "providerAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)",
+            "providerLongitude": "118.116047",
+            "providerLatitude": "24.475622",
+            "providerTime": "2015-12-09 17:04:22",
+            "providerTimeStamp": 1449651862717,
+            "useRedpacket": 0,
+            **"ifMemberComment": false,**
+            **"ifproviderComment": false,**
+            "viewPrice": 10,
+            "imgurl": "http://192.168.2.122:8080/wtmimage/upload/righky/demand/201512091704229216277.jpg&&&",
+            "distance": null,
+            "useYue": 0,
+            "useGold": 0,
+            "batchId": null,
+            "status": "4",
+            "memberAccount": "righky",
+            "useCoupon": 0,
+            "imgList": [
+                "http://192.168.2.122:8080/wtmimage/upload/righky/demand/201512091704229216277.jpg"
+            ],
+            "payStatus": "1",
+            "payWay": "1",
+            "title": "小米手环坏了",
+            "memberId": "15279437023133720150417092245616",
+            "sex": null,
+            "providerId": "78142375978651120151209165705491",
+            "providerName": "黄先生",
+            "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近博瀛小聚",
+            "memberLatitude": "24.475456",
+            "memberLongitude": "118.116043",
+            "interestedIn": null,
+            "serviceType": "1",
+            "createTimeStamp": 1449651862717,
+            "memberHeadImg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg",
+            "providerHeadImg": "http://192.168.2.122:8080/wtmportal//upload/dh623/head/201511021637118094387.jpg",
+            "payWaterId": "2015120917142789235820102",
+            "createTime": "2015-12-09 17:04:22",
+            "totalPrice": null
+        }
+    ],
+    "completeCount": 1
+}
+
+{% endhighlight %}

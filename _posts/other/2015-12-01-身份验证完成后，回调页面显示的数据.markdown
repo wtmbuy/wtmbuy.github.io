@@ -1,0 +1,34 @@
+---
+layout: post
+categories: other
+---
+请求地址：http://192.168.2.122/wtmportal/`app/account/authenticationForNative.html`
+
+参数：
+
+- memberId
+
+返回值：
+
+{% highlight json %}
+
+{   
+    "errorType": "none",
+    "remark": "success",
+    "authentication": {
+        "id": "68545964725279520151120153823780",
+        "status": "1",// 1为等待审核，2为审核通过  为空则为未提交审核资料
+        "memberAccount": null,
+        "idCardFore": "http://192.168.2.122:8080/wtmportal/upload/wtm/apply/201511201536548987679.png",
+        "idCardBack": "http://192.168.2.122:8080/wtmportal/upload/wtm/apply/20151120153706034562.png",
+        "halfProtraitIdCard": "http://192.168.2.122:8080/wtmportal/upload/wtm/apply/201511201537487394260.jpg",
+        "applyName": "黄辉",
+        "remark": null,
+        "idCard": "350424123456789888"
+    },
+    "success": true 
+}
+
+{% endhighlight %}
+
+

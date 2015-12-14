@@ -1,0 +1,27 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/confirmService.html`
+
+参数：
+
+- id `订单id`
+- status `（红色字体为前台传值）status 1 为会员重新发布需求; 3 为服务商确认订单，发送信息给会员状态;4为会员点击服务完成状态，结束状态; 5为服务商取消的订单，也为结束状态之一; 6为会员取消的订单，也为结束状态之一; 7为会员取消需求;8 为会员删除需求;9为服务商确认会员单独在店内下的单;`
+- providerAddress `（在status =9时才传）`
+- providerLongitude `（在status =9时才传）`
+- providerLatitude `（在status =9时才传）`
+
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "操作成功！",
+    "success": true
+}
+
+{% endhighlight %}

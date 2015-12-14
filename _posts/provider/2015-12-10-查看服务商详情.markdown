@@ -1,0 +1,39 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/viewProvider.html`
+
+参数：
+
+- id `其他返回值里的providerId，服务商id`
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+     "errorType": "none",
+    "remark": "success",
+    "provider": {
+        "id": "78142375978651120151209165705491",
+        "headImg": "http://192.168.2.122:8080/wtmportal//upload/dh623/head/201511021637118094387.jpg",
+        "providerName": "黄辉",
+        "interestedIn": null,
+        "createTimeStamp": 1449651425489,
+        "createTime": "2015-12-09 16:57:05",
+        "memberId": "76956413673215020150321175118664",
+        "sex": "1",
+        "cellphone": "15960808557",
+        **"evaluate": 4.25,**
+        "providerType": "2",
+        **"serviceCount": 1**
+    },
+    "success": true
+}
+
+{% endhighlight %}
+

@@ -1,0 +1,51 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/serviceDetails.html`
+
+参数：
+
+- serviceId //服务Id
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "success",
+    "service": {
+        "address": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+        "id": "07650041119017220151117162607461",
+        "content": null,
+        "status": "1",
+        "viewPrice": 12,
+        "longitude": "118.11602",
+        "latitude": "24.475634",
+        "distance": null,
+        "title": "大呼小叫",
+        "imgurl": "http://192.168.2.122:8080/wtmimage/upload/wuyuan/demand/201511261551138007230.jpg&&&http://192.168.2.122:8080/wtmimage/upload/wuyuan/demand/201511261551138007230.jpg&&&",
+        "city": "厦门市",
+        "county": "思明区",
+        "createTime": "2015-11-17 16:26:07",
+        "sex": null,
+        "phone": "18959264392",
+        "createTimeStamp": 1447748767427,
+        "providerId": "12345678123456781234567812345625",
+        "providerName": "叶丽娜",
+        "serviceType": "1",
+        "provinces": "福建省",
+        "imgList": [
+            "http://192.168.2.122:8080/wtmimage/upload/wuyuan/demand/201511261551138007230.jpg",
+            "http://192.168.2.122:8080/wtmimage/upload/wuyuan/demand/201511261551138007230.jpg"
+        ],
+        "payWay": "1",
+        "headimg": null
+    },
+    "success": true
+}
+
+{% endhighlight %}
+

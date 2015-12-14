@@ -1,0 +1,60 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/viewCommentList.html`
+
+参数：
+
+- pageNo
+- providerId
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "totalCount": 2,
+    "remark": "success",
+    "list": [
+        {
+            "id": "11111111222222223333333344444444",
+            "content": "还不错",
+            "evaluate": 4.5,
+            "fromMemberAccount": "righky",
+            "toMemberId": "76956413673215020150321175118664",
+            "fromMemberId": "15279437023133720150417092245616",
+            "createTimeStamp": 1449654334508,
+            "createTime": "2015-12-09 17:45:34",
+            "orderId": "89331515569350820151209170423895",
+            "toMemberAccount": "黄辉",
+            "commemtType": "1",
+            "providerImg": null,
+            "memberImg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"
+        },
+        {
+            "id": "11111111222222223333333344444445",
+            "content": "还不错",
+            "evaluate": 4,
+            "fromMemberAccount": "righky",
+            "toMemberId": "76956413673215020150321175118664",
+            "fromMemberId": "15279437023133720150417092245616",
+            "createTimeStamp": 1449654334508,
+            "createTime": "2015-12-09 17:45:34",
+            "orderId": "89331515569350820151209170423895",
+            "toMemberAccount": "黄辉",
+            "commemtType": "1",
+            "providerImg": null,
+            "memberImg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"
+        }
+    ],
+    "success": true,
+    "totalPage": 1
+}
+
+{% endhighlight %}
+

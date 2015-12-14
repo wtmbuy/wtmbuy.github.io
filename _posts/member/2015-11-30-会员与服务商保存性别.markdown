@@ -1,0 +1,22 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/setSex.html.html`
+
+参数：
+
+- sex  `1为男士 2为女士`
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "保存性别成功！",
+    "success": true
+
+}
+
+{% endhighlight %}

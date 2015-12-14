@@ -1,0 +1,67 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/searchNearService.html`
+
+参数：
+
+- provinces `省，可为空`
+- city `市，可为空`
+- county `县区，可为空`
+- near `传1 则为搜寻附近5公里的服务`
+- mlongitude `near传1时，必传`
+- mlatitude `near传1时，必传`
+
+返回对象：
+
+- [servicesList](/com/wtm/nativeService/provider/vo/ProviderServicesVo.html)
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "success",
+    "success": true,
+    "servicesList": [
+        {
+            "address": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+            "id": "50477324330200220151117200833068",
+            "title": "接电话",
+            "viewPrice": 256,
+            "longitude": "118.115967",
+            "latitude": "24.475712",
+            "sex": "1",
+            "distance": "28.0 m",
+            "headimg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"
+        },
+        {
+            "address": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)",
+            "id": "57184059363448620151123183422530",
+            "title": "赢",
+            "viewPrice": 22,
+            "longitude": "118.116111",
+            "latitude": "24.475665",
+            "sex": "1",
+            "distance": "31.0 m",
+            "headimg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"
+        },
+        {
+            "address": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+            "id": "07650041119017220151117162607461",
+            "title": "大呼小叫",
+            "viewPrice": 12,
+            "longitude": "118.11602",
+            "latitude": "24.475634",
+            "sex": "1",
+            "distance": "35.0 m",
+            "headimg": "http://192.168.2.122:8080/wtmimage/upload/righky/head/201511021627236169739.jpg"
+        }
+    ]
+
+}
+
+{% endhighlight %}
+

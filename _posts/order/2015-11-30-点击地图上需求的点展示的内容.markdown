@@ -1,0 +1,94 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/viewDemand.html`
+
+参数：
+
+- id `订单id`
+- mlongitude
+- mlatitude
+
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "userMember": {
+     "memberId": null,
+     "cellphone": "15960808557",
+     "memberAccount": "dh623",
+     "headImageUrl": "http://192.168.2.122:8080/wtmportal//upload/dh623/head/201511021637118094387.jpg",
+        "memberName": null
+    },
+    "errorType": "none",
+    "remark": "success",
+    "orderList": [
+        {
+            "id": "34384770441041420151111162658085",
+            "content": null,
+            "title": "d",
+            "status": "1",
+            "memberId": "76956413673215020150321175118664",
+            "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业(东门)",
+            "memberLatitude": "24.4869750000",
+            "memberLongitude": "118.1545030000",
+            "providerId": "",
+            "serviceType": "1",
+            "createTime": "2015-11-11 16:26:58",
+            "createTimeStamp": 1447230418083,
+            "releaseType": "1",
+            "providerAddress": null,
+            "providerLongitude": null,
+            "providerLatitude": null,
+            "providerTime": null,
+            "providerTimeStamp": null
+        },
+        {
+            "id": "61917171760957620151114100028178",
+            "content": null,
+            "title": "测试",
+            "status": "1",
+            "memberId": "76956413673215020150321175118664",
+            "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+            "memberLatitude": "24.4667490000",
+            "memberLongitude": "118.1722170000",
+            "providerId": null,
+            "serviceType": "1",
+            "createTime": "2015-11-14 10:00:28",
+            "createTimeStamp": 1447466428151,
+            "releaseType": "1",
+            "providerAddress": null,
+            "providerLongitude": null,
+            "providerLatitude": null,
+            "providerTime": null,
+            "providerTimeStamp": null
+        }
+    ],
+    "success": true,
+    "order": {
+        "id": "61917171760957620151114100028178",
+        "content": null,
+        "title": "测试",
+        "status": "1",
+        "memberId": "76956413673215020150321175118664",
+        "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+        "memberLatitude": "24.4667490000",
+        "memberLongitude": "118.1722170000",
+        "providerId": null,
+        "serviceType": "1",
+        "createTime": "2015-11-14 10:00:28",
+        "createTimeStamp": 1447466428151,
+        "releaseType": "1",
+        "providerAddress": null,
+        "providerLongitude": null,
+        "providerLatitude": null,
+        "providerTime": null,
+        "providerTimeStamp": null
+    }
+}
+
+{% endhighlight %}

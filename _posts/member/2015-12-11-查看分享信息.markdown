@@ -1,0 +1,25 @@
+---
+layout: post
+categories: member
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/member/share.html`
+
+参数：
+
+- memberId
+
+返回值：
+
+{% highlight json %}
+
+{
+    "SHARE_HOMETITLE": "沃有好帮手，爱生活，爱沃帮！",
+    "SHARE_LOGO": "http://192.168.2.177:8080/wtmimage/upload/system/201511270910207695800.png",
+    "errorType": "none",
+    "remark": "success",
+    "SHARE_SUBTITLE": "沃帮生活欢迎您！",
+    "success": true,
+    "SHARE_HOME_URL": "http://192.168.2.177:8080/wtmportal/upload/system/download/d.html?app=wtmbuylocalmarker"
+}
+
+{% endhighlight %}

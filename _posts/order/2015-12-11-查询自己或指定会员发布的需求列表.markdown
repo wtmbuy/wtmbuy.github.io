@@ -1,0 +1,66 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/searchDemand.html`
+
+参数：
+
+- **memberId** 
+- pageNo
+
+
+
+返回值：
+
+{% highlight json %}
+
+{
+   "errorType": "none",
+    "remark": "success",
+    "success": true,
+    "orderList": [
+        {
+            "id": "18600850072730120151110153533570",
+            "content": "兼职修理咯",
+            "memberAddress": "灌口镇凤泉东里73号",
+            "memberLatitude": "45.26",
+            "memberLongitude": "13.15",
+            "providerId": "12345678123456781234567812345658",
+            "serviceType": "1",
+            "createTime": "2015-11-10 15:35:33",
+            "status": "5",
+            "createTimeStamp": 1447140933544,
+            "title": "修理",
+            "memberId": "15279437023133720150417092245616",
+            "releaseType": null,
+            "providerAddress": "湖里区金尚路375号203室",
+            "providerLongitude": "124.568",
+            "providerLatitude": "14.25",
+            "providerTime": "2015-11-10 15:39:40",
+            "providerTimeStamp": 1447141180433
+        },
+        {
+            "id": "80108095403545020151110162947915",
+            "content": "祖传贴膜坏了",
+            "memberAddress": "灌口镇凤泉东里73号",
+            "memberLatitude": "45.26",
+            "memberLongitude": "13.15",
+            "providerId": "12345678123456781234567812345625",
+            "serviceType": "1",
+            "createTime": "2015-11-10 16:29:47",
+            "status": "3",
+            "createTimeStamp": 1447144187868,
+            "title": "需要帮忙",
+            "memberId": "15279437023133720150417092245616",
+            "releaseType": "2",
+            "providerAddress": "思明区厦禾路261号F层场所01单元",
+            "providerLongitude": "45.78",
+            "providerLatitude": "45.12",
+            "providerTime": "2015-11-10 16:30:10",
+            "providerTimeStamp": 1447144210221
+        }
+    ]
+}
+
+{% endhighlight %}

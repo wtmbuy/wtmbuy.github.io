@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>备注信息</title>
+  <meta name="description" content="请求地址：http://192.168.2.122/wtmportal/">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="/remark/2015/11/30/%E5%A4%87%E6%B3%A8%E4%BF%A1%E6%81%AF.html">
+  <link rel="alternate" type="application/rss+xml" title="本地服务接口文档" href="/feed.xml">
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/">本地服务接口文档</a>
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          <a class="page-link" href="/member">member</a>
+        
+          <a class="page-link" href="/order">order</a>
+        
+          <a class="page-link" href="/provider">provider</a>
+        
+          <a class="page-link" href="/remark">remark</a>
+        
+          <a class="page-link" href="/other">other</a>
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">备注信息</h1>
+    <p class="post-meta"><time datetime="2015-11-30T00:00:00+08:00" itemprop="datePublished">Nov 30, 2015</time></p>
+  </header>
+
+  <div class="post-content" itemprop="articleBody">
+    <p>请求地址：http://192.168.2.122/wtmportal/</p>
+
+<p>参数：</p>
+
+<p>返回值：</p>
+
+<figure class="highlight"><pre><code class="language-json" data-lang="json"><span class="p">{</span><span class="w">
+    
+    </span><span class="err">登录增加isNative参数，判断是否是服务APP如果是服务商，则返回的isProvider</span><span class="w"> </span><span class="err">里</span><span class="w"> </span><span class="err">赋值</span><span class="w"> </span><span class="err">服务商Id，长度是32位，否，则返回的isProvider字段</span><span class="w"> </span><span class="err">为0</span><span class="w">
+
+    </span><span class="err">订单状态</span><span class="w"> </span><span class="err">status//</span><span class="w"> </span><span class="err">1</span><span class="w"> </span><span class="err">为会员发布需求;2</span><span class="w"> </span><span class="err">为会员下单，等待服务商确认状态;3</span><span class="w"> </span><span class="err">为服务商确认订单，发送信息给会员状态;4为会员点击服务完成状态，结束状态;</span><span class="w"> </span><span class="err">5为服务商取消的订单，也为结束状态之一;</span><span class="w"> </span><span class="err">6为会员取消的订单，也为结束状态之一;</span><span class="w"> </span><span class="err">7为会员取消需求;9为服务商确认会员单独在店内下的单</span><span class="w">
+
+    </span><span class="err">1</span><span class="w"> </span><span class="err">等待中</span><span class="w"> </span><span class="err">1，2</span><span class="w"> </span><span class="err">，9</span><span class="w">
+    </span><span class="err">2</span><span class="w"> </span><span class="err">进行中</span><span class="w"> </span><span class="err">3</span><span class="w">   
+    </span><span class="err">3</span><span class="w"> </span><span class="err">已完成</span><span class="w"> </span><span class="err">4</span><span class="w"> 
+    </span><span class="err">4</span><span class="w"> </span><span class="err">已取消</span><span class="w"> </span><span class="err">5</span><span class="w"> </span><span class="err">6</span><span class="w"> </span><span class="err">7</span><span class="w">
+    </span><span class="err">5待付款</span><span class="w">  
+    </span><span class="err">订单id与需求id(orderList与order里的id)</span><span class="w">   
+    </span><span class="err">服务id(servicesList与serviceProvider里的id,其他返回值里的serviceProviderId)</span><span class="w">
+    </span><span class="err">服务商id(provider里的id,其他返回值里的providerId)</span><span class="w">
+ 
+</span><span class="p">}</span></code></pre></figure>
+
+
+  </div>
+
+</article>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+<!--
+  <div class="wrapper">
+
+    <h2 class="footer-heading">本地服务接口文档</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col footer-col-1">
+        <ul class="contact-list">
+          <li>本地服务接口文档</li>
+          <li><a href="mailto:"></a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-2">
+        <ul class="social-media-list">
+          
+
+          
+        </ul>
+      </div>
+
+      <div class="footer-col footer-col-3">
+        <p></p>
+      </div>
+    </div>
+
+  </div>
+-->
+</footer>
+
+
+  </body>
+
+</html>

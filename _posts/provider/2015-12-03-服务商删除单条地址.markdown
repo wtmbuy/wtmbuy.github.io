@@ -1,0 +1,25 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/emptyAddressList.html`
+
+参数：
+
+- addressId `地址id`
+
+返回对象：
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "success",
+    "success": true
+}
+
+{% endhighlight %}
+

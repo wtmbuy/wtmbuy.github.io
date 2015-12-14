@@ -1,0 +1,52 @@
+---
+layout: post
+categories: provider
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/provider/searchService.html`
+
+参数：
+
+- providerId `服务商id`
+- pageNo
+- mlongitude
+- mlatitude
+- near `传1`
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "totalCount": 1,
+    "remark": "success",
+    "success": true,
+    "servicesList": [
+        {
+            "address": "思明区嘉禾路341号3203室",
+            "id": "84453584077835920151109161443184",
+            "content": "专业洗车",
+            "provinces": "福建省",
+            "status": "1",
+            "imgList": null,
+            "distance": null,
+            "viewPrice": null,
+            "headimg": "http://www.wtmbuy.com/upload/system/201504181426383429019.png",
+            "createTimeStamp": 1447056883165,
+            "providerId": "12345678123456781234567812345636",
+            "serviceType": "1",
+            "createTime": "2015-11-09 16:14:43",
+            "city": "厦门市",
+            "county": "思明区",
+            "title": "洗车",
+            "imgurl": "",
+            "longitude": "118.1264705713",
+            "latitude": "24.4965515835"
+        }
+    ],
+    "totalPage": 1
+}
+
+{% endhighlight %}
+

@@ -1,0 +1,71 @@
+---
+layout: post
+categories: order
+---
+请求地址：http://192.168.2.122/wtmportal/app/native`/order/searchNearDemand.html`
+
+参数：
+
+- provinces
+- city
+- county  
+- title
+- mlongitude
+- mlatitude
+- near `传1 则为搜寻附近5公里的需求`
+
+
+
+返回值：
+
+{% highlight json %}
+
+{
+    "errorType": "none",
+    "remark": "success",
+    "success": true,
+    "orderList": [
+        {
+            "id": "15071644389266920151117095610419",
+            "content": null,
+            "createTimeStamp": 1447725370398,
+            "status": "1",
+            "title": "好的好的好的就到家的",
+            "memberId": "85301360848167320150212141514971",
+            "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+            "memberLatitude": "24.475699",
+            "memberLongitude": "118.116022",
+            "providerId": null,
+            "serviceType": "1",
+            "createTime": "2015-11-17 09:56:10",
+            "releaseType": "1",
+            "providerAddress": null,
+            "providerLongitude": null,
+            "providerLatitude": null,
+            "providerTime": null,
+            "providerTimeStamp": null
+        },
+        {
+            "id": "62799938697559720151113140641531",
+            "content": "祖传补习",
+            "createTimeStamp": 1447394801530,
+            "status": "1",
+            "title": "家教",
+            "memberId": "15279437023133720150417092245616",
+            "memberAddress": "福建省 厦门市 思明区 湖滨南路 靠近夏商置业",
+            "memberLatitude": "24.475663",
+            "memberLongitude": "118.11601",
+            "providerId": "12345678123456781234567812345625",
+            "serviceType": "1",
+            "createTime": "2015-11-13 14:06:41",
+            "releaseType": null,
+            "providerAddress": "思明区厦禾路261号F层场所01单元",
+            "providerLongitude": "118.0802807569",
+            "providerLatitude": "24.4606293776",
+            "providerTime": null,
+            "providerTimeStamp": null
+        }
+    ]
+}
+
+{% endhighlight %}
